@@ -1,0 +1,122 @@
+
+/* reset css */
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h1 {
+  /* font-family: "Tektur", sans-serif; */
+  font-family: "Nova Flat", system-ui;
+  color: #F0F4EF;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+h3,h4,li,p {
+    color: #F0F4EF;
+}
+
+a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: white;         /* Color blanco para el texto */
+}
+
+header,footer {
+    background-color: #0F2546;
+
+}
+
+main{
+    background-image: url(../assets/backgroundMain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+      padding: 20px 0;
+};
+
+.logo {
+    height: 60px;
+}
+
+button {
+    background-color: #d46405
+}
+
+.titleMain {
+    text-align: center;
+}
+
+.menuMain li{
+  margin-right: 10px;
+}
+
+.sectionCenter0 {
+  text-align: center;
+}
+.sectionCenter1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sectionCenter {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sectionCenter2 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px; /* Separación inferior */
+  margin-top: 40px; /* Separación superior */
+}
+.sectionCenter3 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabla-imagenes {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tabla-imagenes td {
+  padding: 10px;
+  text-align: center;
+}
+.tabla-imagenes img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+    text-align: center ;
+}
+
+.img-der {
+  float: right;
+  width: 300px;
+  height: auto;
+  margin-left: 20px; /* Espacio entre imagen y texto */
+}
+.img-izq {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.texto-izq {
+  /* El texto fluirá naturalmente a la izquierda */
+  margin-right: 320px; /* Ancho imagen + margen */
+}
+
+.texto-der {
+  margin-left: 320px;
+}
