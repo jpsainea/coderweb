@@ -7,3 +7,41 @@ main {
     background-size: cover;
 
 }
+
+h1 {
+  /* font-family: "Tektur", sans-serif; */
+  font-family: "Nova Flat", system-ui;
+  color: #F0F4EF;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+nav {
+  /* font-family: "Tektur", sans-serif; */
+  font-family: "Nova Flat", system-ui;
+  color: #F0F4EF;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h3,h4,li,p {
+    color: #F0F4EF;
+}
+
+/* efecto 3d en tipografia */
+.text-3d {
+    color: white;
+    text-shadow:
+        1px 1px 0 #999,
+        2px 2px 0 #888,
+        3px 3px 0 #777,
+        4px 4px 0 #666,
+        5px 5px 0 #555,
+        6px 6px 0 #444,
+        7px 7px 0 #333,
+        8px 8px 0 #222,
+        9px 9px 10px rgba(0,0,0,0.6);
+}
+
+

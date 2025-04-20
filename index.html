@@ -22,8 +22,8 @@
             <div class="collapse navbar-collapse fs-5" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item d-flex align-items-center">
-                  <a class="nav-link link-light fs-3" aria-current="page" href="./index.html">
-                   <img src="./assets/logo.svg" alt="MLBB" width="100" height="100"> Inicio
+                  <a class="nav-link link-light fs-2" aria-current="page" href="./index.html">
+                   <img src="./assets/logo.svg" alt="MLBB" width="40" height="40"> Inicio
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center" >
@@ -37,45 +37,48 @@
           </nav>
         </header>
         <main>
-            <!-- presentacion inicial -->
-
-           <section>
-                <div class="titleMain">
-                <h1>El RINCON DEL MOBA</h1>
-                <h4> Guia de juego Mobile legends bang bang</h4>
-                </div>
-                <!-- <img src="./assets/portada.jpg" alt=""> -->
-                <video width="" height="" autoplay muted loop>
+        <!-- presentacion inicial -->
+          <section class="position-relative ">
+            <div class="row align-items-start">
+                <video  autoplay muted loop>
                     <source src="./assets/M5_PV_EN_FB.mp4" type="video/mp4">
                 </video>
-           </section>
-            <!-- botones de navegacion -->
-           <section class="sectionCenter0">
-                <button type="button">Modo de juego</button>
-                <button type="button">Mapas</button>
-                <button type="button">Heroes</button>
-           </section>
-            <!-- seccion modo de juego -->
-            <section class="sectionCenter">
-                <h1>Modo de juego</h1>
-                <img src="./assets/modosJuego.jpg" alt="">
+            </div>
+            <!-- Overlay oscuro (mejorar el contraste) -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <!-- Texto centrado sobre el video -->
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                <h1 class="text-3d text-white display-1 display-md-1 fw-bold shadow-sm">El RINCÓN DEL MOBA</h1>
+                <h4 class="text-3d text-white fs-3 fs-md-4 shadow-sm">Guía de juego Mobile Legends Bang Bang</h4>
+            </div>
+          </section>
+           <!-- botones de navegacion -->
+          <section class="sectionCenter0">
+               <button type="button">Modo de juego</button>
+               <button type="button">Mapas</button>
+               <button type="button">Heroes</button>
+          </section>
+           <!-- seccion modo de juego -->
+           <section class="sectionCenter">
+               <h1>Modo de juego</h1>
+               <img src="./assets/modosJuego.jpg" alt="">
 
-            </section >
-            <!-- seccion mapas -->
-            <section class="sectionCenter2">
-                <h1>Mapas</h1>
-                <img src="./assets/mapa1.jpg" alt="">
-            </section>
-            <!-- seccion heroes -->
-            <section class="sectionCenter3">
-                <h1>Heroes</h1>
-                <img src="./assets/lukas2.png" alt="">
-                <img src="./assets/miya2.png" alt="">
-                <img src="./assets/khale2.png" alt="">
-                <img src="./assets/atlas2.png" alt="">
-                <img src="./assets/carmilla2.png" alt="">
-                <img src="./assets/cecilio2.png" alt="">
-            </section>
+           </section >
+           <!-- seccion mapas -->
+           <section class="sectionCenter2">
+               <h1>Mapas</h1>
+               <img src="./assets/mapa1.jpg" alt="">
+           </section>
+           <!-- seccion heroes -->
+           <section class="sectionCenter3">
+               <h1>Heroes</h1>
+               <img src="./assets/lukas2.png" alt="">
+               <img src="./assets/miya2.png" alt="">
+               <img src="./assets/khale2.png" alt="">
+               <img src="./assets/atlas2.png" alt="">
+               <img src="./assets/carmilla2.png" alt="">
+               <img src="./assets/cecilio2.png" alt="">
+           </section>
         </main>
 
         <footer class="sectionCenter0">
