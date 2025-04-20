@@ -7,6 +7,10 @@ main {
     background-size: cover;
 }
 
+.theme_fonts {
+  font-family: "Nova Flat", system-ui;
+  color: #F0F4EF;
+}
 h1 {
   /* font-family: "Tektur", sans-serif; */
   font-family: "Nova Flat", system-ui;
