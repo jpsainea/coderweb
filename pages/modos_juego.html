@@ -4,24 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>El rincon del moba</title>
-        <link href="../css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- tipografias -->
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Flat&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <!-- estilos de bootstrap  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <!-- mis estilos -->
+        <link href="../css/style.css" rel="stylesheet">
+
 
     </head>
     <body>
         <!-- encabezado de la pagina -->
         <header>
-          <img class="logo" src="../assets/logo.svg" alt="">
-            <!-- menu de navegacion -->
-          <nav>
-             <ul class="menuMain">
-                 <li><a href="../index.html">Inicio</a></li>
-                 <li><a href="./modos_juego.html">Modos de juego</a></li>
-                 <li><a href="./heroes.html">Heroes</a></li>
-             </ul>
-          </nav>
+          <!-- menu de navegacion -->
+        <nav class="navbar navbar-expand-lg p-3 bg-main">
+          <div class="collapse navbar-collapse fs-3 bg-main" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item d-flex align-items-center">
+                <a class="nav-link active link-light" aria-current="page" href="../index.html">
+                 <img src="../assets/logo.svg" alt="MLBB" width="100" height="100"> Inicio
+                </a>
+              </li>
+              <li class="nav-item d-flex align-items-center" >
+                <a class="nav-link link-light" href="./modos_juego.html">Modos de juego</a>
+              </li>
+              <li class="nav-item d-flex align-items-center link-light">
+                <a class="nav-link link-light" href="./heroes.html">Heroes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         </header>
         <main>
             <!-- presentacion inicial -->
@@ -92,6 +106,8 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus maiores asper
             <button type="button">Contactenos</button>
 
         </footer>
-
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
     </body>
 </html>
