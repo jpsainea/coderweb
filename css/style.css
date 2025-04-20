@@ -1,3 +1,9 @@
-.bg-main {
+header {
     background-color: #0F2546;
+}
+main {
+    background-image: url(../assets/backgroundMain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
