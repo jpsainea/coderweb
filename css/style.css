@@ -16,6 +16,13 @@ h1 {
   font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
+a:hover {
+  font-weight: 600;
+}
+
 nav {
   font-family: "Nova Flat", system-ui;
   color: #F0F4EF;
