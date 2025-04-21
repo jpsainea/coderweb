@@ -1,3 +1,4 @@
+
 header {
     background-color: #0F2546;
 }
@@ -5,8 +6,8 @@ main {
     background-image: url(../assets/backgroundMain.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #333; /* Color si la imagen no carga */
 }
-
 .theme_fonts {
   font-family: "Nova Flat", system-ui;
   color: #F0F4EF;
@@ -61,4 +62,3 @@ h3,h4,li,p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
