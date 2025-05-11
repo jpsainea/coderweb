@@ -11,6 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Flat&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
         <!-- estilos de bootstrap  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+        <!-- libreria de animaciones aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
         <!-- mis estilos -->
         <link href="css/style.css" rel="stylesheet">
 
@@ -52,8 +57,8 @@
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
             <!-- Texto centrado sobre el video -->
             <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                <h1 class="text-3d text-white display-1 display-md-1 fw-bold shadow-sm">El RINCÓN DEL MOBA</h1>
-                <h4 class="text-3d text-white fs-3 fs-md-4 shadow-sm">Guía de juego Mobile Legends Bang Bang</h4>
+                <h1 class="text-3d text-white display-1 display-md-1 fw-bold shadow-sm" data-aos="zoom-in-up">El RINCÓN DEL MOBA</h1>
+                <h4 class="text-3d text-white fs-3 fs-md-4 shadow-sm" data-aos="flip-left">Guía de juego Mobile Legends Bang Bang</h4>
             </div>
           </section>
           <!-- divisor -->
@@ -67,13 +72,13 @@
            <!-- botones de navegacion -->
           <section class="container">
             <div class="row m-4">
-               <div class="col text-end">
+               <div class="col text-end" data-aos="fade-right"  data-aos-duration="3000" data-aos-offset="10">
                   <a class="btn img-button theme_fonts" href="#modosjuego">Modo de juego</a>
                </div>
-               <div class="col text-center">
+               <div class="col text-center" data-aos="flip-left"  data-aos-duration="3000" data-aos-offset="10">
                <a class="btn img-button theme_fonts" href="#mapas" >Mapas</a>
                </div>
-               <div class="col text-start">
+               <div class="col text-start" data-aos="fade-left"  data-aos-duration="3000"  data-aos-offset="10">
                <a class="btn img-button theme_fonts" href="#heroes" >Heroes</a>
                </div>
             </div>
@@ -87,11 +92,11 @@
              </div>
           </div>
          <!-- seccion modo de juego -->
-          <section class="position-relative theme_fonts" id="modosjuego">
+          <section class="position-relative theme_fonts" id="modosjuego" >
            <div class="row align-items-start">
               <img src="./assets/modosJuego.jpg" alt="modo_juego" class="bg-dark opacity-50">
               <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                 <a class="link-light text-3d display-2 display-md-1 shadow" href="./pages/modos_juego.html">Modos de juego</a>
+                 <a class="link-light text-3d display-2 display-md-1 shadow" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" ref="./pages/modos_juego.html">Modos de juego</a>
               </div>
            </div>
           </section >
@@ -109,7 +114,7 @@
                 <img src="./assets/mapa1.jpg" alt="mapas" class="bg-dark opacity-50">
                 <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
            <!-- <a class="link-light text-3d display-2 display-md-1 shadow" href="./pages/">Mapas</a> -->
-                  <a class="link-light text-3d display-2 display-md-1 shadow">Mapas</a>
+                  <a class="link-light text-3d display-2 display-md-1 shadow" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Mapas</a>
                 </div>
             </div>
           </section>
@@ -124,22 +129,22 @@
 
            <!-- seccion heroes -->
            <section class="position-relative theme_fonts text-center" id="heroes">
-               <a class="link-light text-3d display-2 display-md-1  shadow" href="./pages/heroes.html">Heroes</a>
+               <a class="link-light text-3d display-2 display-md-1 shadow" data-aos="fade-right" data-aos-offset="100"  data-aos-easing="ease-in-sine"  href="./pages/heroes.html">Heroes</a>
                <div id="multiCarousel" class="carousel slide" data-bs-ride="carousel">
                  <div class="carousel-inner">
                    <!-- Primer grupo de 4 imágenes -->
                    <div class="carousel-item active">
                      <div class="row">
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="1">
                          <img src="./assets/layla2.png" class="d-block w-100" alt="...">
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="100">
                          <img src="./assets/hylos2.png" class="d-block w-100" alt="...">
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="200">
                          <img src="./assets/kadita2.png" class="d-block w-100" alt="...">
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="300">
                          <img src="./assets/jawhead2.png" class="d-block w-100" alt="...">
                        </div>
                      </div>
@@ -239,6 +244,12 @@
     <!-- Enlace a los scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    <!-- script para aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     </body>
 </html>
