@@ -11,6 +11,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Flat&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
         <!-- estilos de bootstrap  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+        <!-- libreria de animaciones aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- mis estilos -->
         <link href="../css/style.css" rel="stylesheet">
 
@@ -62,13 +66,13 @@
            <!-- botones de navegacion -->
           <section class="container">
             <div class="row m-4">
-               <div class="col text-end">
-                  <a class="btn img-button theme_fonts" href="#coliseo">Coliseo</a>
+               <div class="col text-end" data-aos="fade-right"  data-aos-duration="3000" data-aos-offset="10">
+                  <a class="btn img-button theme_fonts " href="#coliseo">Coliseo</a>
                </div>
-               <div class="col text-center">
-               <a class="btn img-button theme_fonts" href="#clasica" >Clasica</a>
+               <div class="col text-center" data-aos="flip-left"  data-aos-duration="3000" data-aos-offset="10">
+               <a class="btn img-button theme_fonts " href="#clasica" >Clasica</a>
                </div>
-               <div class="col text-start">
+               <div class="col text-start" data-aos="fade-left"  data-aos-duration="3000" data-aos-offset="10">
                <a class="btn img-button theme_fonts" href="#clasificatoria" >Clasificatoria</a>
                </div>
             </div>
@@ -284,5 +288,12 @@
     <!-- Enlace a los scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    <!-- script para aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     </body>
 </html>
