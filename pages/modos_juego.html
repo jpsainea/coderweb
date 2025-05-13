@@ -22,30 +22,49 @@
     </head>
     <body>
         <!-- encabezado de la pagina -->
-        <header>
-          <!-- menu de navegacion -->
-        <nav class="navbar navbar-expand-lg p-3 bg-main">
-          <div class="collapse navbar-collapse fs-5  bg-main" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item d-flex align-items-center">
-                <a class="nav-link link-light"  href="../index.html">
-                 <img src="../assets/logo_image_slogan.png" alt="MLBB" width="120" height="40">
-                 <img src="../assets/home_icon.svg" height="20" > Inicio
-                </a>
-              </li>
-              <li class="nav-item d-flex align-items-center" >
-                <a class="nav-link link-light fs-2" aria-current="page" href="./modos_juego.html">
-                  <img src="../assets/gamemode_icon.svg" height="20"> Modos de juego</a>
-              </li>
-              <li class="nav-item d-flex align-items-center link-light">
-                <a class="nav-link link-light" href="./heroes.html">
-                    <img src="../assets/heroe_icon.svg" height="20"> Heroes</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        </header>
-        <main>
+       <header>
+           <!-- Menu de navegación responsivo -->
+           <nav class="navbar navbar-expand-lg navbar-dark bg-main p-3">
+               <div class="container-fluid">
+                   <!-- Logo/Brand - visible en todos los dispositivos -->
+                   <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                       <img src="../assets/logo_image_slogan.png" alt="MLBB" width="120" height="40" class="d-none d-sm-block">
+                       <img src="../assets/logo_image_slogan.png" alt="MLBB" width="80" height="30" class="d-block d-sm-none">
+                   </a>
+
+                   <!-- Botón hamburguesa - solo visible en móvil/tablet -->
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+
+                   <!-- Contenido colapsable -->
+                   <div class="collapse navbar-collapse fs-5" id="navbarNav">
+                       <ul class="navbar-nav">
+                           <li class="nav-item d-flex align-items-center mx-auto">
+                               <a class="nav-link link-light" aria-current="page" href="../index.html">
+                                   <img src="../assets/home_icon.svg" height="20" class="me-2">Inicio
+                                   <!-- <span class="d-none d-lg-inline">Inicio</span> -->
+                               </a>
+                           </li>
+                           <li class="nav-item d-flex align-items-center mx-auto">
+                               <a class="nav-link link-light" href="../pages/modos_juego.html">
+                                   <img src="../assets/gamemode_icon.svg" height="20" class="me-2">Modos de juego
+                                   <!-- <span class="d-none d-lg-inline">Modos de juego</span> -->
+                               </a>
+                           </li>
+                           <li class="nav-item d-flex align-items-center mx-auto">
+                               <a class="nav-link link-light" href="../pages/heroes.html">
+                                   <img src="../assets/heroe_icon.svg" height="20" class="me-2">Heroes
+                                   <!-- <span class="d-none d-lg-inline">Heroes</span> -->
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+       </header>
+
+       <main>
             <!-- presentacion inicial -->
           <section class="position-relative w-80">
             <div class="row align-items-start">
