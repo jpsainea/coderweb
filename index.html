@@ -69,11 +69,21 @@
         <main>
         <!-- presentacion inicial -->
           <section class="position-relative ">
+
             <div class="row align-items-start">
-                <video  autoplay muted loop>
+                <!-- Video para pantallas grandes (md y arriba) -->
+                <video class="d-none d-md-block w-100" autoplay muted loop>
                     <source src="./assets/M5_PV_EN_FB.webm" type="video/webm">
                 </video>
+
+                <!-- Video para móviles (sm y abajo) -->
+                <video class="d-block d-md-none w-100" autoplay muted loop>
+                    <source src="./assets/M5_PV_EN_FB_mobile.webm" type="video/webm">
+                    <!-- Versión optimizada para móviles -->
+                </video>
             </div>
+
+
             <!-- Overlay oscuro (mejorar el contraste) -->
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
             <!-- Texto centrado sobre el video -->

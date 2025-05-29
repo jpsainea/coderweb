@@ -69,11 +69,20 @@
        <main>
             <!-- presentacion inicial -->
           <section class="position-relative w-80">
+
             <div class="row align-items-start">
-                <video  autoplay muted loop>
+                <!-- Video para pantallas grandes (md y arriba) -->
+                <video class="d-none d-md-block w-100" autoplay muted loop>
                     <source src="../assets/media_modos.webm" type="video/webm">
                 </video>
+
+                <!-- Video para móviles (sm y abajo) -->
+                <video class="d-block d-md-none w-100" autoplay muted loop>
+                    <source src="../assets/media_modos_mobile.webm" type="video/webm">
+                    <!-- Versión optimizada para móviles -->
+                </video>
             </div>
+
             <!-- divisor -->
             <div class="container">
                <div class="row justify-content-center">
