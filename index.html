@@ -11,35 +11,59 @@
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Flat&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
         <!-- estilos de bootstrap  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+        <!-- libreria de animaciones aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
         <!-- mis estilos -->
         <link href="css/style.css" rel="stylesheet">
 
     </head>
     <body>
         <!-- encabezado de la pagina -->
-        <header>
-            <!-- menu de navegacion -->
-          <nav class="navbar navbar-expand-lg p-3 bg-main">
+<header>
+    <!-- Menu de navegación responsivo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main p-3">
+        <div class="container-fluid">
+            <!-- Logo/Brand - visible en todos los dispositivos -->
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                <img src="./assets/logo_image_slogan.png" alt="MLBB" width="120" height="40" class="d-none d-sm-block">
+                <img src="./assets/logo_image_slogan.png" alt="MLBB" width="80" height="30" class="d-block d-sm-none">
+            </a>
+
+            <!-- Botón hamburguesa - solo visible en móvil/tablet -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable -->
             <div class="collapse navbar-collapse fs-5" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item d-flex align-items-center">
-                  <a class="nav-link link-light fs-2" aria-current="page" href="./index.html">
-                   <img src="./assets/logo_image_slogan.png" alt="MLBB" width="120" height="40">
-                   <img src="./assets/home_icon.svg" height="20" > Inicio
-                  </a>
-                </li>
-                <li class="nav-item d-flex align-items-center" >
-                  <a class="nav-link link-light" href="./pages/modos_juego.html">
-                    <img src="./assets/gamemode_icon.svg" height="20"> Modos de juego</a>
-                </li>
-                <li class="nav-item d-flex align-items-center link-light">
-                  <a class="nav-link link-light" href="./pages/heroes.html">
-                    <img src="./assets/heroe_icon.svg" height="20"> Heroes</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex align-items-center mx-auto">
+                        <a class="nav-link link-light" aria-current="page" href="./index.html">
+                            <img src="./assets/home_icon.svg" height="20" class="me-2">Inicio
+                            <!-- <span class="d-none d-lg-inline">Inicio</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center mx-auto">
+                        <a class="nav-link link-light" href="./pages/modos_juego.html">
+                            <img src="./assets/gamemode_icon.svg" height="20" class="me-2">Modos de juego
+                            <!-- <span class="d-none d-lg-inline">Modos de juego</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center mx-auto">
+                        <a class="nav-link link-light" href="./pages/heroes.html">
+                            <img src="./assets/heroe_icon.svg" height="20" class="me-2">Heroes
+                            <!-- <span class="d-none d-lg-inline">Heroes</span> -->
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-        </header>
+        </div>
+    </nav>
+</header>
+
         <main>
         <!-- presentacion inicial -->
           <section class="position-relative ">
@@ -52,94 +76,104 @@
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
             <!-- Texto centrado sobre el video -->
             <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                <h1 class="text-3d text-white display-1 display-md-1 fw-bold shadow-sm">El RINCÓN DEL MOBA</h1>
-                <h4 class="text-3d text-white fs-3 fs-md-4 shadow-sm">Guía de juego Mobile Legends Bang Bang</h4>
+                <h1 class="text-3d text-white display-1 fw-bold shadow-sm" data-aos="zoom-in-up">
+                    <span class="d-lg-inline d-md-none d-none ">El RINCÓN DEL MOBA</span>
+                    <span class="d-md-inline d-none d-lg-none fs-1">El RINCÓN DEL MOBA</span>
+                    <span class="d-inline d-md-none d-lg-none fs-3">El RINCÓN DEL MOBA</span>
+                </h1>
+                <h4 class="text-3d text-white shadow-sm" data-aos="flip-left">
+                    <span class="d-lg-inline d-md-none d-none fs-3">Guía de juego Mobile Legends Bang Bang</span>
+                    <span class="d-md-inline d-none d-lg-none fs-4">Guía de juego Mobile Legends Bang Bang</span>
+                    <span class="d-inline d-md-none d-lg-none fs-6">Guía de juego Mobile Legends Bang Bang</span>
+                </h4>
             </div>
           </section>
           <!-- divisor -->
           <div class="container">
-             <div class="row">
-                <div class="col text-center">
-                   <img src="./assets/split1.png" height="100" alt="divisor">
-                </div>
-             </div>
+              <div class="row justify-content-center">
+                 <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <img src="./assets/split1.png" class="img-fluid" alt="divisor">
+                 </div>
+              </div>
           </div>
+
            <!-- botones de navegacion -->
           <section class="container">
-            <div class="row m-4">
-               <div class="col text-end">
+            <div class="row m-4 d-flex flex-column flex-md-row align-items-center">
+               <div class="col text-center text-md-end mb-3 mb-md-0" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="10">
                   <a class="btn img-button theme_fonts" href="#modosjuego">Modo de juego</a>
                </div>
-               <div class="col text-center">
-               <a class="btn img-button theme_fonts" href="#mapas" >Mapas</a>
+               <div class="col text-center mb-3 mb-md-0" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="10">
+                  <a class="btn img-button theme_fonts" href="#mapas">Mapas</a>
                </div>
-               <div class="col text-start">
-               <a class="btn img-button theme_fonts" href="#heroes" >Heroes</a>
+               <div class="col text-center text-md-start" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="10">
+                  <a class="btn img-button theme_fonts" href="#heroes">Heroes</a>
                </div>
             </div>
           </section>
-          <!-- divisor -->
-          <div class="container">
-             <div class="row">
-                <div class="col text-center">
-                   <img src="./assets/split2.png" height="100" alt="divisor">
-                </div>
-             </div>
-          </div>
+
+         <!-- divisor -->
+           <div class="container">
+              <div class="row justify-content-center">
+                 <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <img src="./assets/split2.png" class="img-fluid" alt="divisor">
+                 </div>
+              </div>
+           </div>
          <!-- seccion modo de juego -->
-          <section class="position-relative theme_fonts" id="modosjuego">
+          <section class="position-relative theme_fonts" id="modosjuego" >
            <div class="row align-items-start">
               <img src="./assets/modosJuego.jpg" alt="modo_juego" class="bg-dark opacity-50">
               <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                 <a class="link-light text-3d display-2 display-md-1 shadow" href="./pages/modos_juego.html">Modos de juego</a>
+                 <a class="link-light text-3d display-2 display-md-1 shadow" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" ref="./pages/modos_juego.html">Modos de juego</a>
               </div>
            </div>
           </section >
           <!-- divisor -->
           <div class="container">
-             <div class="row">
-                <div class="col text-center">
-                   <img src="./assets/split2.png" height="100" alt="divisor">
+             <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                   <img src="./assets/split2.png" class="img-fluid" alt="divisor">
                 </div>
              </div>
           </div>
+
            <!-- seccion mapas -->
           <section class="position-relative theme_fonts" id="mapas">
             <div class="row align-items-start">
                 <img src="./assets/mapa1.jpg" alt="mapas" class="bg-dark opacity-50">
                 <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
            <!-- <a class="link-light text-3d display-2 display-md-1 shadow" href="./pages/">Mapas</a> -->
-                  <a class="link-light text-3d display-2 display-md-1 shadow">Mapas</a>
+                  <a class="link-light text-3d display-2 display-md-1 shadow" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Mapas</a>
                 </div>
             </div>
           </section>
            <!-- divisor -->
           <div class="container">
-             <div class="row">
-                <div class="col text-center">
-                   <img src="./assets/split3.png" height="100" alt="divisor">
-                </div>
-             </div>
-          </div>
-
+              <div class="row justify-content-center">
+                 <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <img src="./assets/split3.png" class="img-fluid" alt="divisor">
+                 </div>
+              </div>
+           </div>
            <!-- seccion heroes -->
            <section class="position-relative theme_fonts text-center" id="heroes">
-               <a class="link-light text-3d display-2 display-md-1  shadow" href="./pages/heroes.html">Heroes</a>
+               <a class="link-light text-3d display-2 display-md-1 shadow" data-aos="fade-right" data-aos-offset="100"  data-aos-easing="ease-in-sine"  href="./pages/heroes.html">Heroes</a>
                <div id="multiCarousel" class="carousel slide" data-bs-ride="carousel">
                  <div class="carousel-inner">
                    <!-- Primer grupo de 4 imágenes -->
                    <div class="carousel-item active">
                      <div class="row">
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="1">
                          <img src="./assets/layla2.png" class="d-block w-100" alt="...">
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="100">
                          <img src="./assets/hylos2.png" class="d-block w-100" alt="...">
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="200">
                          <img src="./assets/kadita2.png" class="d-block w-100" alt="...">
                        </div>
-                       <div class="col-md-3">
+                       <div class="col-md-3" data-aos="flip-left" data-aos-offset="300">
                          <img src="./assets/jawhead2.png" class="d-block w-100" alt="...">
                        </div>
                      </div>
@@ -212,9 +246,9 @@
         <footer class="text-center bg-dark theme_fonts">
           <!-- divisor -->
           <div class="container">
-             <div class="row">
-                <div class="col text-center">
-                   <img src="./assets/split2.png" height="100" alt="divisor">
+             <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                   <img src="./assets/split2.png" class="img-fluid" alt="divisor">
                 </div>
              </div>
           </div>
@@ -239,6 +273,12 @@
     <!-- Enlace a los scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    <!-- script para aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     </body>
 </html>
