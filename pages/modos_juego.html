@@ -115,184 +115,231 @@
                   </div>
                </div>
             </div>
-          <!-- seccion Coliseo -->
-          <section>
-            <div id ="coliseo">
-              <article>
-                <div class="container mt-5 fs-5">
-                   <div class="row">
-                     <div class="d-flex flex-column col text-center m-5">
-                       <h1>Coliseo</h1>
-                       <img src="../assets/coliseo.webp" alt="Coliseo" d-flex>
-                     </div>
-                     <div class="d-flex flex-column col">
-                        <p>El <strong>Modo Coliseo </strong> es un modo de juego especial que se enfoca en combates 5 vs 5 un mapa pequeño y cerrado</p>
-                        <p>Las caracteristicas principales de este modo son:<br>
-                            <ol>
-                                <li>Formato de combate:<br>
-                                   Dos equipos de 5 jugadores compiten entre sí.
-                                </li>
-                                <li>Mapa Pequeño: <br>
-                                  El escenario es reducido de un solo carril, donde se encuentra 2 torretas para cada equipo y 2 mounstros de la jungla al igual que un par de arbustos.
-                                </li>
-                                <li>Objetivo:<br>
-                                    Derrumbar el nexo enemigo destruyento las torres enemigas
-                                </li>
-                                <li>Mecánicas Especiales:<br>
-                                    <ul>
-                                        <li>Sin recall ni regreso a base: No puedes volver a base para curarte o comprar items.</li>
-                                        <li>Items limitados: Solo puedes comprar items entre rounds, no durante el combate.</li>
-                                        <li>Nivel y oro acelerados: Subes de nivel rápidamente para evitar partidas largas.</li>
-                                        <li>Nexo: cuando mueres, puedes comprar items antes de salir de la sona de inicio.</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                       </p>
-                     </div>
-                   </div>
-               </div>
-              </article>
-            </div>
-          </section>
-          <!-- divisor -->
-          <div class="container">
-             <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 text-center">
-                   <img src="../assets/split2.webp" class="img-fluid" alt="divisor">
+
+            <!-- Sección Coliseo -->
+<section id="coliseo" class="py-4">
+  <div class="container">
+    <article class="row align-items-center">
+      <!-- Imagen (primero en móvil, orden cambia en desktop) -->
+      <div class="col-12 col-lg-5 order-lg-2 text-center mb-4 mb-lg-0">
+        <h1 class="display-5 fw-bold mb-3">Coliseo</h1>
+        <img src="../assets/coliseo.webp" alt="Coliseo" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Contenido -->
+      <div class="col-12 col-lg-7 order-lg-1">
+        <p class="lead">El <strong class="text-primary">Modo Coliseo</strong> es un modo de juego especial que se enfoca en combates 5 vs 5 en un mapa pequeño y cerrado.</p>
+
+        <div class="bg-primary p-3 rounded" style="--bs-bg-opacity: .1;>
+          <h5 class="fw-bold ">Características principales:</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <strong>Formato de combate:</strong>
+              <p>Dos equipos de 5 jugadores compiten entre sí.</p>
+            </li>
+            <li class="mb-2">
+              <strong>Mapa Pequeño:</strong>
+              <p>Escenario reducido de un solo carril con 2 torretas por equipo, 2 monstruos de jungla y algunos arbustos.</p>
+            </li>
+            <li class="mb-2">
+              <strong>Objetivo:</strong>
+              <p>Derrumbar el nexo enemigo destruyendo las torres enemigas.</p>
+            </li>
+            <li>
+              <strong>Mecánicas Especiales:</strong>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Sin recall ni regreso a base</li>
+                <li class="list-group-item">Items limitados (solo entre rounds)</li>
+                <li class="list-group-item">Nivel y oro acelerados</li>
+                <li class="list-group-item">Nexo: compras items antes de salir al morir</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Divisor -->
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-8 col-lg-6">
+      <img src="../assets/split2.webp" class="img-fluid" alt="divisor">
+    </div>
+  </div>
+</div>
+
+<!-- Sección Clásica -->
+<section id="clasica" class="py-4 bg-dark">
+  <div class="container">
+    <article class="row align-items-center">
+      <!-- Imagen -->
+      <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+        <h1 class="display-5 fw-bold mb-3">Clásica</h1>
+        <img src="../assets/classic.webp" alt="Modo Clásico" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Contenido -->
+      <div class="col-12 col-lg-7">
+        <p class="lead">El <strong class="text-primary">Modo Clásico</strong> es el formato estándar del juego, con combates 5 vs 5 en un mapa de 3 carriles.</p>
+
+        <div class="bg-light p-3 rounded">
+          <h5 class="fw-bold">Características principales:</h5>
+          <div class="accordion accordion-flush" id="clasicaAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clasica-combate">
+                  Formato de combate
+                </button>
+              </h2>
+              <div id="clasica-combate" class="accordion-collapse collapse" data-bs-parent="#clasicaAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li class="text-dark">5 vs 5 en el mapa principal (Land of Dawn)</li>
+                    <li class="text-dark">Roles definidos (Tanque, Tirador, Mago, etc.)</li>
+                  </ul>
                 </div>
-             </div>
-          </div>
-
-          <!-- seccion Clasica -->
-          <section>
-            <div id ="clasica">
-              <article>
-                <div class="container mt-5 fs-5">
-                   <div class="d-flex flex-row-reverse">
-                     <div class="d-flex flex-column col text-center m-">
-                       <h1>Clasica</h1>
-                       <img src="../assets/classic.webp" alt="Coliseo" d-flex>
-                     </div>
-                     <div class="d-flex flex-column col">
-                        <p>El <strong>Modo Clasica </strong> es el formato estándar del juego, donde dos equipos de 5 jugadores se enfrentan en un mapa de 3 carriles (superior, medio e inferior) con el objetivo principal de destruir el Nexo enemigo </p>
-                        <p>Las caracteristicas principales de este modo son:<br>
-                            <ol>
-                                <li>Formato de combate:<br>
-                                  <ul>
-                                    <li>
-                                  5 vs 5: Dos equipos de cinco jugadores compiten en el mapa principal (Land of Dawn).
-                                    </li>
-                                    <li>
-                                  Roles definidos: Tanque, tirador, mago, asesino, soporte, etc., con distribución estratégica por carriles.
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>Mapa Completo: <br>
-                                  <ul>
-                                    <li>
-                                      3 carriles (Superior, Medio e Inferior) + Área de jungla.
-                                    </li>
-                                    <li>
-                                      Estructuras clave:
-                                      <ul>
-                                        <li>
-                                         Torretas: Defienden cada carril y deben ser destruidas para avanzar.
-                                        </li>
-                                        <li>
-                                         Base: Contiene el Santuario (que cura al equipo) y el Nexo (objetivo final).
-                                        </li>
-                                        <li>
-                                         Monstruos y Buffs: En la jungla (como el Lithowanderer o el Buff de Tortuga).
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>Objetivo:<br>
-                                    <ul>
-                                      <li>
-                                        Destruir el Nexo enemigo: El objetivo principal es destruir el Nexo del equipo contrario.
-                                      </li>
-                                      <li>
-                                        Destruir torretas y inhibidores: Para avanzar en el mapa y debilitar al enemigo.
-                                      </li>
-                                </li>
-                                <li>Mecánicas clave:<br>
-                                    <ul>
-                                        <li>Recuperación de vida: Puedes regresar a base para curarte y comprar items.</li>
-                                        <li>Items ilimitados: Puedes comprar items en cualquier momento.</li>
-                                        <li>Nivel y oro normal: La progresión es más equilibrada y estratégica.</li>
-                                        <li>Respawn: Cuando mueres, respawneas en la base después de un tiempo.</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                       </p>
-                     </div>
-                   </div>
-               </div>
-              </article>
+              </div>
             </div>
-          </section>
-          <!-- divisor -->
-          <div class="container">
-             <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6 text-center">
-                   <img src="../assets/split2.webp" class="img-fluid" alt="divisor">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clasica-mapa">
+                  Mapa Completo
+                </button>
+              </h2>
+              <div id="clasica-mapa" class="accordion-collapse collapse" data-bs-parent="#clasicaAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li class="text-dark">3 carriles (Superior, Medio e Inferior) + Jungla</li>
+                    <li class="text-dark">Estructuras clave:
+                      <ul>
+                        <li class="text-dark">Torretas defensivas</li>
+                        <li class="text-dark">Base con Santuario y Nexo</li>
+                        <li class="text-dark">Monstruos y Buffs en jungla</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-             </div>
-          </div>
-          <!-- seccion Clasificatoria -->
-          <section>
-            <div id ="clasificatoria">
-              <article>
-                <div class="container mt-5 fs-5">
-                   <div class="row">
-                     <div class="d-flex flex-column col text-center m-5">
-                       <h1>Clasificatoria</h1>
-                       <img src="../assets/rank.webp" alt="rank" d-flex>
-                     </div>
-                     <div class="d-flex flex-column col">
-                        <p>El <strong>Modo clasificatoria </strong> es el formato competitivo y principal de Mobile Legends, donde los jugadores compiten para subir de rango (desde Guerrero hasta Mítico/Gloria Mitica) y demostrar su habilidad.</p>
-                        <p>En este modo se tiene el mismo formato de combate, mapa y objetivo que el modo clasico, pero con las siguientes diferencias:<br>
-                            <ol>
-                                <li>Sistema de Rangos y Estrellas:<br>
-                                    <ul>
-                                        <li>Pérdida/Ganancia de estrellas: Ganas estrellas al vencer, las pierdes al perder.</li>
-                                        <li>Ligas o divisiones: Desde Guerrero hasta Mítico (y Glory Mitica).</li>
-                                        <li> Puntos de Protección: Evitan perder estrellas en ciertas condiciones.</li>
-                                    </ul>
-                                </li>
-                                <li>Selección de Héroes (Draft Pick):<br>
-                                    <ul>
-                                        <li>Fase de prohibiciones (Baneo): Cada equipo puede banear 2-3 héroes (según el rango).</li>
-                                        <li>Elección por turnos: Selección estratégica de héroes en orden rotativo.</li>
-                                        <li>Restricciones: No se puede repetir héroe en el mismo equipo.</li>
-                                    </ul>
-                                </li>
-                                <li>Recompensas y Competitividad:<br>
-                                    <ul>
-                                        <li>Recompensas de temporada: Skins exclusivos, emblemas y otros premios al subir de rango.</li>
-                                        <li>Mayor dificultad: Los jugadores suelen ser más serios y coordinados que en Clásico.</li>
-                                        <li>Puntos de Clasificación (Mítico+): Define tu posición en el leaderboard global.</li>
-                                    </ul>
-                                </li>
-
-                            </ol>
-                       </p>
-                     </div>
-                   </div>
-               </div>
-              </article>
+              </div>
             </div>
-          </section>
 
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clasica-mecanicas">
+                  Mecánicas clave
+                </button>
+              </h2>
+              <div id="clasica-mecanicas" class="accordion-collapse collapse" data-bs-parent="#clasicaAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li class="text-dark">Recuperación de vida en base</li>
+                    <li class="text-dark">Items ilimitados</li>
+                    <li class="text-dark">Progresión equilibrada</li>
+                    <li class="text-dark">Respawn en base al morir</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Divisor -->
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-8 col-lg-6">
+      <img src="../assets/split2.webp" class="img-fluid" alt="divisor">
+    </div>
+  </div>
+</div>
+
+<!-- Sección Clasificatoria -->
+<section id="clasificatoria" class="py-4">
+  <div class="container">
+    <article class="row align-items-center">
+      <!-- Imagen (orden diferente en desktop) -->
+      <div class="col-12 col-lg-5 order-lg-2 text-center mb-4 mb-lg-0">
+        <h1 class="display-5 fw-bold mb-3">Clasificatoria</h1>
+        <img src="../assets/rank.webp" alt="Modo Clasificatorio" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Contenido -->
+      <div class="col-12 col-lg-7 order-lg-1">
+        <p class="lead">El <strong class="text-dark fw-bold">Modo Clasificatoria</strong> es el formato competitivo principal para subir de rango (Guerrero a Mítico/Gloria Mítica).</p>
+
+        <div class="p-3 rounded">
+          <h5 class="fw-bold">Diferencias con el modo Clásico:</h5>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">Sistema de Rangos</h6>
+                  <ul class="card-text">
+                    <li class="text-dark">Pérdida/Ganancia de estrellas</li>
+                    <li class="text-dark">Ligas desde Guerrero a Mítico</li>
+                    <li class="text-dark">Puntos de Protección</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">Draft Pick</h6>
+                  <ul class="card-text">
+                    <li class="text-dark">Fase de prohibiciones</li>
+                    <li class="text-dark">Elección por turnos</li>
+                    <li class="text-dark">Restricciones de héroes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">Recompensas</h6>
+                  <ul class="card-text">
+                    <li class="text-dark">Skins exclusivos</li>
+                    <li class="text-dark">Emblemas especiales</li>
+                    <li class="text-dark">Premios de temporada</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">Competitividad</h6>
+                  <ul class="card-text text-dark">
+                    <li class="text-dark">Jugadores más serios</li>
+                    <li class="text-dark">Mayor coordinación</li>
+                    <li class="text-dark">Leaderboard global</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
         </main>
         <footer class="text-center bg-dark theme_fonts">
           <!-- divisor -->
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-12 col-md-8 col-lg-6 text-center">
-                <img src="./assets/split2.webp" class="img-fluid" alt="divisor">
+                <img src="../assets/split2.webp" class="img-fluid" alt="divisor">
               </div>
             </div>
           </div>
